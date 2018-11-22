@@ -1,2 +1,2 @@
-# TriviaDevs
-Juego de trivia desarollado con React js
+# TriviaDevs(React js)
+Juego de trivia para desarrolladores
