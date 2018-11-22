@@ -1,0 +1,115 @@
+:root{
+  --blueDark :#282C34;
+  --white : #fff;
+}
+
+body{
+  margin:0;
+  background-color:var(--blueDark);
+  color : var(--white);
+  font-family: 'Montserrat'
+}
+
+.trivia{
+  min-height:100vh;
+  display: grid;
+  grid-template: 1fr / 1fr;
+  grid-template-areas:"start";
+}
+
+.trivia.go{
+  grid-template: 1fr 200px / 1fr;
+  grid-template-areas:"start"
+                      "points";
+  
+}
+
+.title{
+  font-size: 5em;
+  margin: 0;
+}
+
+.start-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-go{
+  border:none;
+  width: 100px;
+  padding: .8em 1em;
+  border-radius:4px;
+  background-color: #865FC5;
+  color: #fff;
+  outline: 0; 
+  transition: .3s;
+}
+
+.btn-go:active{
+  transform: scale(.9)
+}
+
+.point-container{
+  grid-area: points;
+  background-color:#007ACC;
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(2,1fr) ;
+  font-size: 1em;
+}
+
+.item-point{
+  font-size: 1.3em;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}.questions{
+  display: grid;
+  grid-template: 1fr 150px / 1fr
+}
+
+.questions-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+}
+
+.title-question{
+  font-size : 1.5em;
+  box-shadow: inset 0 -5px #007ACC;
+  padding: .3em;
+}
+
+.options{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.option-item{
+  flex-shrink: 0;
+  display: block;
+  height: 50px;
+  width: 400px;
+  border:1px solid #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 .5em;
+  margin:  0 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: .3s;
+  will-change:transform
+}
+
+.option-item:hover{
+  box-shadow: 0 0 18px rgba(256,256,256,.4);
+  background-color: #865FC5;
+}
+
+.option-item:active{
+  transform: scale(.9)
+}

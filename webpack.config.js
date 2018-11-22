@@ -13,7 +13,7 @@ module.exports = (env)=>{
 
   return {
     entry : {
-      home : path.resolve(__dirname,'src/js/task')
+      home : path.resolve(__dirname,'src/js/home')
     },
     output:{
       path : path.resolve(__dirname,'dist'),
